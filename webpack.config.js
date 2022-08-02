@@ -14,16 +14,6 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
         type: 'asset',
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'image/',
-              publicPath: 'image/',
-            },
-          },
-        ],
       },
       {
         test: /\.html$/,
