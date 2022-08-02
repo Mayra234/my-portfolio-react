@@ -13,7 +13,7 @@ export const Avatar = ({ image, mainText = '', className = '' }) => {
         </span>
       </a>
       <div>
-        <span class="avatar-name">{mainText}</span>
+        <span className="avatar-name">{mainText}</span>
       </div>
     </div>
   );

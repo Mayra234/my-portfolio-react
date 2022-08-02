@@ -1,23 +1,32 @@
 import './index.css';
+import { useEffect, useState } from 'react';
 
 export const Button = ({
   id = '',
   children = '',
-  style = '',
   className = '',
   palette = '',
   type = 'button',
+  ...props
 }) => {
-  if (palette === 'primary') {
-    style = { background: '#e91e63' };
-  } else if (palette === 'secondary') {
-    style = { style };
-  }
+  const [style, setStyle] = useState(props.style);
+
+  const changePalette = () => {
+    if (palette === 'primary') {
+      setStyle((prevStyle) => ({ ...prevStyle, background: '#e91e63' }));
+    } else if (palette === 'secondary') {
+      setStyle((prevStyle) => ({ ...prevStyle, background: 'transparent' }));
+    }
+  };
+
+  useEffect(() => {
+    changePalette();
+  }, [palette]);
 
   return (
     <button
       id={id}
-      className={'button' + className}
+      className={'button ' + className}
       palette={palette}
       style={style}
       type={type}
