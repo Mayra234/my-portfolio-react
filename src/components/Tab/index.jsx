@@ -1,14 +1,10 @@
 import './index.css';
 
-export default {
-  title: 'Components/Tab',
-};
-
-export const Overview = ({ id = '', className = '', text = '' }) => {
+export const Tab = ({ id = '', className = '', children = '' }) => {
   return (
     <div className="container-tab">
       <li id={id} className="tab-nav-item">
-        <a className={'tab-nav-link ' + className}>{text}</a>
+        <a className={'tab-nav-link ' + className}>{children}</a>
       </li>
     </div>
   );
