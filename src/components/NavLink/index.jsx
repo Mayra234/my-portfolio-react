@@ -8,8 +8,8 @@ export const NavLink = ({
   className = '',
 }) => {
   return (
-    <li className="nav" style={{ style }}>
-      <a href={route} className={'link-nav' + className} id={id}>
+    <li className="nav">
+      <a style={style} href={route} className={'link-nav' + className} id={id}>
         {children}
       </a>
     </li>

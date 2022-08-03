@@ -6,5 +6,5 @@ export default {
 };
 
 export const Overview = () => {
-  return <Navbar style={{ background: 'pink' }} />;
+  return <Navbar style={{ background: 'pink', color: 'black' }} />;
 };

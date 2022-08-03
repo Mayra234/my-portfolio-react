@@ -8,11 +8,27 @@ export const Navbar = ({ style = '' }) => {
       <Avatar mainText="Alejandra" />
       <ListNavLinks
         links={[
-          { children: 'Inicio', route: '#banner' },
-          { children: 'Sobre mi', route: '#about-me' },
-          { children: 'Hoja de vida', route: '#resume' },
-          { children: 'Proyectos', route: '#project' },
-          { children: 'Contacto', route: '#contact' },
+          { style: { color: 'black' }, children: 'Inicio', route: '#banner' },
+          {
+            style: { color: 'black' },
+            children: 'Sobre mi',
+            route: '#about-me',
+          },
+          {
+            style: { color: 'black' },
+            children: 'Hoja de vida',
+            route: '#resume',
+          },
+          {
+            style: { color: 'black' },
+            children: 'Proyectos',
+            route: '#project',
+          },
+          {
+            style: { color: 'black' },
+            children: 'Contacto',
+            route: '#contact',
+          },
         ]}
       />
     </div>
