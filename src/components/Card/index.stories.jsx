@@ -3,9 +3,9 @@ import { H2 } from '../H2';
 import { Card } from './index';
 
 export default { title: 'Components/Card' };
-export const Overview = (args) => {
+export const Overview = () => {
   return (
-    <Card>
+    <Card palette="primary">
       <i className="icon"></i>
       <H2 style={{ fontSize: '16px' }}>location</H2>
       <p>Mayra</p>
