@@ -2,7 +2,7 @@ import './index.css';
 
 export const Avatar = ({ image = '', mainText = '', className = '' }) => {
   return (
-    <div className={'avatar' + className}>
+    <div className={'avatar ' + className}>
       <a className="a">
         <span className="image-avatar">
           {image ? (

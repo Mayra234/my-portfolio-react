@@ -30,7 +30,7 @@ export const Card = ({
   }, [palette]);
 
   return (
-    <div palette={palette} style={style} className={'card' + className}>
+    <div palette={palette} style={style} className={'card ' + className}>
       {children}
     </div>
   );

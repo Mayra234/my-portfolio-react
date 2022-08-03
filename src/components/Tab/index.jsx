@@ -6,9 +6,9 @@ export default {
 
 export const Overview = ({ id = '', className = '', text = '' }) => {
   return (
-    <div className="">
-      <li>
-        <a></a>
+    <div className="container-tab">
+      <li id={id} className="tab-nav-item">
+        <a className={'tab-nav-link ' + className}>{text}</a>
       </li>
     </div>
   );
