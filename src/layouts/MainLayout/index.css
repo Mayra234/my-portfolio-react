@@ -1,0 +1,11 @@
+.main-layout {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    overflow-x: hidden;
+  }
+}
