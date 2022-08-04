@@ -1,5 +1,23 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { MainLayout } from './layouts/MainLayout';
+import { Home } from './pages/Home';
 
-export const App = () => {
-  return <div>Hola mundo</div>;
-};
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/home"
+          component={
+            <MainLayout>
+              <Home />
+            </MainLayout>
+          }
+        ></Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
