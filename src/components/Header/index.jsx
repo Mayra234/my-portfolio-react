@@ -7,9 +7,9 @@ export const Header = ({
   style = '',
 }) => {
   return (
-    <div style={style} className={'header ' + className}>
-      <div>{children}</div>
+    <div className={'header ' + className}>
       <div>{menuResponsive}</div>
+      <div>{children}</div>
     </div>
   );
 };

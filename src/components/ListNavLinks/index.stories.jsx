@@ -9,9 +9,9 @@ export const Overview = () => {
   return (
     <ListNavLinks
       links={[
-        { style: { color: 'black' }, children: 'Inicio' },
-        { style: { color: 'black' }, children: 'Hoja de vida' },
-        { style: { color: 'black' }, children: 'Proyectos' },
+        { children: 'Inicio' },
+        { children: 'Hoja de vida' },
+        { children: 'Proyectos' },
       ]}
     />
   );

@@ -6,9 +6,5 @@ export default {
 };
 
 export const Overview = () => {
-  return (
-    <Header style={{ background: 'pink' }} menuResponsive="Alejandra">
-      mayra diavanera
-    </Header>
-  );
+  return <Header menuResponsive="Alejandra">mayra diavanera</Header>;
 };
