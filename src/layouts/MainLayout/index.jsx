@@ -1,3 +1,4 @@
+import React from 'react';
 import './index.css';
 import { Header } from '../../components/Header';
 import { Navbar } from '../../components/Navbar';
@@ -22,13 +23,14 @@ export const MainLayout = ({ children = '' }) => {
               ]}
             />
           </Navbar>
-          <Button palette="secondary" id="button-menu">
+          <Button className="bar-menu" palette="secondary" id="button-menu">
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </Button>
         </Header>
       </div>
+      <div>{children}</div>
     </>
   );
 };

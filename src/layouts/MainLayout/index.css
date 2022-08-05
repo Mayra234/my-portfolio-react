@@ -1,11 +1,32 @@
 .main-layout {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
-  .main-layout {
-    overflow-x: hidden;
+.icon-bar {
+  background: #e91e63;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin-top: 4px;
+}
+
+.bar-menu {
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .bar-menu {
+    display: block;
+  }
+  .bar-menu {
+    display: none;
   }
 }
