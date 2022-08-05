@@ -1,22 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { MainLayout } from './layouts/MainLayout';
 import { Home } from './pages/Home';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/home"
-          component={
-            <MainLayout>
-              <Home />
-            </MainLayout>
-          }
-        ></Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/home" element={<MainLayout children="holii" />} />
+      <Route path="/" element={<h1>Hola Mayra</h1>} />
+    </Routes>
   );
 }
 
