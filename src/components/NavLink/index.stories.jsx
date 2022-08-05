@@ -6,5 +6,5 @@ export default {
 };
 
 export const Overview = () => {
-  return <NavLink style={{ color: 'black' }}>Inicio</NavLink>;
+  return <NavLink>Inicio</NavLink>;
 };

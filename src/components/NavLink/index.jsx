@@ -9,7 +9,7 @@ export const NavLink = ({
 }) => {
   return (
     <li className="nav">
-      <a style={style} href={route} className={'link-nav ' + className} id={id}>
+      <a href={route} className={'link-nav ' + className} id={id}>
         {children}
       </a>
     </li>
