@@ -1,5 +1,9 @@
-import { Banner } from './Banner';
+import React from 'react';
 
 export const Home = () => {
-  return <Banner />;
+  return (
+    <>
+      <div>Hola mundo</div>
+    </>
+  );
 };
