@@ -1,4 +1,5 @@
 import './index.css';
+import React from 'react';
 
 export const SkillBar = ({ percentage = '', mainText = '' }) => {
   return (

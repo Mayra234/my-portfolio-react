@@ -1,5 +1,6 @@
 import './index.css';
 import { useEffect, useState } from 'react';
+import React from 'react';
 
 export const Button = ({
   id = '',

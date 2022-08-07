@@ -1,4 +1,5 @@
 import './index.css';
+import React from 'react';
 
 export const H2 = ({ className = '', children = '', style = '' }) => {
   return (

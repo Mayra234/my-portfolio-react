@@ -1,4 +1,5 @@
 import './index.css';
+import React from 'react';
 
 export const Header = ({
   children = '',
@@ -8,8 +9,8 @@ export const Header = ({
 }) => {
   return (
     <div className={'header ' + className}>
-      <div>{menuResponsive}</div>
       <div>{children}</div>
+      <div>{menuResponsive}</div>
     </div>
   );
 };
