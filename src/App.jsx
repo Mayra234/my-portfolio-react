@@ -6,8 +6,14 @@ import { Home } from './pages/Home';
 function App() {
   return (
     <Routes>
-      <Route path="/home" element={<MainLayout children="holii" />} />
-      <Route path="/" element={<h1>Hola Mayra</h1>} />
+      <Route
+        path="/"
+        element={
+          <MainLayout>
+            <Home />
+          </MainLayout>
+        }
+      />
     </Routes>
   );
 }
