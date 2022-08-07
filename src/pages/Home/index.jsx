@@ -1,9 +1,18 @@
 import React from 'react';
+import { AboutMe } from './AboutMe';
+import { Banner } from './Banner';
+import { Resume } from './Resume';
+import { Projects } from './Projects';
+import { Contact } from './Contact';
 
 export const Home = () => {
   return (
     <>
-      <div>Hola mundo</div>
+      <Banner />
+      <AboutMe />
+      {/* <Resume /> */}
+      <Projects />
+      <Contact />
     </>
   );
 };
