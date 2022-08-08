@@ -14,7 +14,7 @@ export const Card = ({
     if (palette === 'primary') {
       setStyle((prevStyle) => ({
         ...prevStyle,
-        boxShadow: '0 20px 40px rgb(0 0 0 / 20%)',
+        boxShadow: '0 7px 10px rgb(0 0 0 / 20%)',
       }));
     } else if (palette === 'secondary') {
       setStyle((prevStyle) => ({
