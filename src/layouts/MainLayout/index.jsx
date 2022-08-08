@@ -5,6 +5,9 @@ import { Navbar } from '../../components/Navbar';
 import { Avatar } from '../../components/Avatar';
 import { ListNavLinks } from '../../components/ListNavLinks';
 import { Button } from '../../components/Button';
+import { Icon } from '../../components/Icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export const MainLayout = ({ children = '' }) => {
   return (
@@ -24,9 +27,9 @@ export const MainLayout = ({ children = '' }) => {
             />
           </Navbar>
           <Button className="bar-menu" palette="secondary" id="button-menu">
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
+            <Icon>
+              <FontAwesomeIcon icon={faBars} />
+            </Icon>
           </Button>
         </Header>
       </div>
