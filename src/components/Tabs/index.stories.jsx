@@ -1,5 +1,4 @@
-import React from 'react';
-import { mounted } from '../../utils/mounted';
+import React, { useState } from 'react';
 import { Tabs } from './index';
 
 export default {
@@ -7,41 +6,28 @@ export default {
 };
 
 export const Overview = () => {
-  let tabContent;
-  const renderTab = (index) => {
-    switch (index) {
-      case 0:
-        tabContent.innerHTML = <div>Estudios</div>;
-        break;
-      case 1:
-        tabContent.innerHTML = <div>Habilidades</div>;
-        break;
-      case 3:
-        tabContent.innerHTML = <div>Experiencias</div>;
-        break;
-      default:
-        return '';
-    }
-  };
-
-  mounted(() => {
-    tabContent = document.getElementById('tab-content');
-    renderTab(0);
-  });
-
+  const [currentTab, setCurrentTab] = useState(0);
   return (
-    <>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Tabs
         tabs={[
           {
-            children: 'Estudios',
+            text: 'Estudios',
           },
-          { children: 'Saberes' },
-          { children: 'Experiencia' },
+          { text: 'Saberes' },
+          { text: 'Experiencia' },
         ]}
-        onChange={renderTab}
+        onChange={(index) => setCurrentTab(index)}
       />
-      <div id="tab-content"></div>
-    </>
+      {currentTab === 0 && (
+        <div className="tab-container">contenedor de Estudios</div>
+      )}
+      {currentTab === 1 && (
+        <div className="tab-container">contenedor de Saberes</div>
+      )}
+      {currentTab === 2 && (
+        <div className="tab-container">contenedor de Experiencia</div>
+      )}
+    </div>
   );
 };

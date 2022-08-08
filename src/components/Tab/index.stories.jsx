@@ -6,5 +6,5 @@ export default {
 };
 
 export const Overview = () => {
-  return <Tab>Estudios</Tab>;
+  return <Tab text="estudios" />;
 };
