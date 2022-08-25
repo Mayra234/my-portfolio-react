@@ -5,7 +5,7 @@
   max-height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .scroll {
@@ -15,7 +15,8 @@
   transition: all 0.4s;
 }
 
-.scroll .a {
+.scroll .a,
+.scroll .avatar-name {
   color: #e91e63;
 }
 

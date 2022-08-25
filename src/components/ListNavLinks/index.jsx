@@ -3,8 +3,14 @@ import PropTypes from 'prop-types';
 import './index.css';
 import React from 'react';
 
-export const ListNavLinks = (props) => {
-  return props.links.map((link, i) => <NavLink key={i} {...link} />);
+export const ListNavLinks = ({ links = [], className = '' }) => {
+  return (
+    <div className={className}>
+      {links.map((link, i) => (
+        <NavLink key={i} {...link} />
+      ))}
+    </div>
+  );
 };
 
 ListNavLinks.propTypes = {

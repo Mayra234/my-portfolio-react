@@ -6,5 +6,10 @@ export default {
 };
 
 export const Overview = () => {
-  return <Header menuResponsive="Alejandra">mayra diavanera</Header>;
+  return (
+    <Header>
+      <div>Mayra Diavanera</div>
+      <div>Alejandra herrera</div>
+    </Header>
+  );
 };

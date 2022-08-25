@@ -8,6 +8,7 @@ export const Button = ({
   className = '',
   palette = '',
   type = 'button',
+  onClick = () => {},
   ...props
 }) => {
   const [style, setStyle] = useState(props.style);
@@ -31,6 +32,7 @@ export const Button = ({
       palette={palette}
       style={style}
       type={type}
+      onClick={onClick}
     >
       {children}
     </button>

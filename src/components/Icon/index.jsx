@@ -1,6 +1,6 @@
 import './index.css';
 import React from 'react';
 
-export const Icon = ({ children }) => {
-  return <div className="icon">{children}</div>;
+export const Icon = ({ children = '', className = '' }) => {
+  return <div className={'icon ' + className}>{children}</div>;
 };

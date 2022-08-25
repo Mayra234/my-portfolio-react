@@ -1,6 +1,6 @@
 import './index.css';
 import React from 'react';
 
-export const Navbar = ({ children = '' }) => {
-  return <div className="navbar">{children}</div>;
+export const Navbar = ({ children = '', className = '' }) => {
+  return <div className={'navbar ' + className}>{children}</div>;
 };
