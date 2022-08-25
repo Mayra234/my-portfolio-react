@@ -49,9 +49,14 @@ ul {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   list-style-type: none;
+}
+
+.scroll a {
+  color: #232323;
 }
 
 h1 {
@@ -98,6 +103,10 @@ img {
   width: 100%;
 }
 
+.nav > a {
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .content-resume,
   .container-projects,
@@ -109,6 +118,8 @@ img {
   }
 }
 
-.nav > a {
-  color: #fff;
+@media (max-width: 768px) {
+  .scroll a {
+    color: #fff;
+  }
 }
