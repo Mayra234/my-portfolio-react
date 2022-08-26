@@ -12,11 +12,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export const MainLayout = ({ children = '' }) => {
   const [menu, setMenu] = useState(false);
-  const [hide, setHide] = useState(false);
 
   const toggleMenu = () => {
     setMenu(!menu);
-    setHide(!hide);
   };
 
   return (
@@ -47,9 +45,9 @@ export const MainLayout = ({ children = '' }) => {
             </Icon>
           </Button>
         </Header>
+        <div>{children}</div>
+        <Footer>© 2022</Footer>
       </div>
-      <div>{children}</div>
-      <Footer>© 2022</Footer>
     </>
   );
 };
