@@ -1,10 +1,14 @@
 {
+  "homepage": "https://Mayra234.github.io/my-portfolio-react",
   "name": "my-portfolio-rect",
   "version": "1.0.0",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "start": "webpack serve",
+    "start": "webpack serve --mode=development",
+    "build:prod": "webpack",
+    "build:dev": "webpack --mode=development",
+    "deploy": "npm run build:prod & gh-pages -d dist",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -30,6 +34,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.1.18",
+    "antd": "^4.22.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
@@ -49,7 +54,9 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "dotenv-webpack": "^8.0.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
