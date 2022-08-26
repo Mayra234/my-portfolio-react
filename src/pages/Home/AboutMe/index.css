@@ -76,6 +76,9 @@
     margin-top: 4px;
     max-width: 100%;
   }
+  .text-about-h2 {
+    text-align: center;
+  }
   .p {
     font-size: 15px;
     color: #222;
