@@ -3,6 +3,7 @@ import './index.css';
 import { Header } from '../../components/Header';
 import { Navbar } from '../../components/Navbar';
 import { Avatar } from '../../components/Avatar';
+import { Footer } from '../../components/Footer';
 import { ListNavLinks } from '../../components/ListNavLinks';
 import { Button } from '../../components/Button';
 import { Icon } from '../../components/Icon';
@@ -46,6 +47,7 @@ export const MainLayout = ({ children = '' }) => {
         </Header>
       </div>
       <div>{children}</div>
+      <Footer>© 2022</Footer>
     </>
   );
 };
