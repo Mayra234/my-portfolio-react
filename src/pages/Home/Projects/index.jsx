@@ -40,7 +40,7 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <a route="https://github.com/Mayra234/admin-crud-clothes/">
+            <a href="https://github.com/Mayra234/admin-crud-clothes/">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
@@ -48,7 +48,7 @@ export const Projects = () => {
                 />
               </Icon>
             </a>
-            <a route="https://mayra234.github.io/admin-crud-clothes/">
+            <a href="https://mayra234.github.io/admin-crud-clothes/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
@@ -69,7 +69,7 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <a route="https://github.com/Mayra234/fosico-html-css">
+            <a href="https://github.com/Mayra234/fosico-html-css">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
@@ -77,7 +77,7 @@ export const Projects = () => {
                 />
               </Icon>
             </a>
-            <a route="https://mayra234.github.io/fosico-html-css/">
+            <a href="https://mayra234.github.io/fosico-html-css/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
@@ -98,7 +98,7 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <a route="https://github.com/Mayra234/vanilla-js-calculator">
+            <a href="https://github.com/Mayra234/vanilla-js-calculator">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
@@ -106,7 +106,7 @@ export const Projects = () => {
                 />
               </Icon>
             </a>
-            <a route="https://mayra234.github.io/vanilla-js-calculator/">
+            <a href="https://mayra234.github.io/vanilla-js-calculator/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
@@ -127,7 +127,7 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <a route="https://github.com/Mayra234/layout-meet">
+            <a href="https://github.com/Mayra234/layout-meet">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
@@ -135,7 +135,7 @@ export const Projects = () => {
                 />
               </Icon>
             </a>
-            <a route=" https://mayra234.github.io/layout-meet/">
+            <a href=" https://mayra234.github.io/layout-meet/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
@@ -157,7 +157,7 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <a route="https://github.com/Mayra234/rock-paper-scissors-react">
+            <a href="https://github.com/Mayra234/rock-paper-scissors-react">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
@@ -165,7 +165,7 @@ export const Projects = () => {
                 />
               </Icon>
             </a>
-            <a route=" https://mayra234.github.io/rock-paper-scissors-react/">
+            <a href=" https://mayra234.github.io/rock-paper-scissors-react/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
