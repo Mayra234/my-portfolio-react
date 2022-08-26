@@ -40,19 +40,19 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <NavLink route="https://github.com/Mayra234/admin-crud-clothes/">
+            <a route="https://github.com/Mayra234/admin-crud-clothes/">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
                   icon={faArrowUpRightFromSquare}
                 />
               </Icon>
-            </NavLink>
-            <NavLink route="https://mayra234.github.io/admin-crud-clothes/">
+            </a>
+            <a route="https://mayra234.github.io/admin-crud-clothes/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
-            </NavLink>
+            </a>
           </div>
         </Card>
 
@@ -69,19 +69,19 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <NavLink route="https://github.com/Mayra234/fosico-html-css">
+            <a route="https://github.com/Mayra234/fosico-html-css">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
                   icon={faArrowUpRightFromSquare}
                 />
               </Icon>
-            </NavLink>
-            <NavLink route="https://mayra234.github.io/fosico-html-css/">
+            </a>
+            <a route="https://mayra234.github.io/fosico-html-css/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
-            </NavLink>
+            </a>
           </div>
         </Card>
 
@@ -98,19 +98,19 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <NavLink route="https://github.com/Mayra234/vanilla-js-calculator">
+            <a route="https://github.com/Mayra234/vanilla-js-calculator">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
                   icon={faArrowUpRightFromSquare}
                 />
               </Icon>
-            </NavLink>
-            <NavLink route="https://mayra234.github.io/vanilla-js-calculator/">
+            </a>
+            <a route="https://mayra234.github.io/vanilla-js-calculator/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
-            </NavLink>
+            </a>
           </div>
         </Card>
 
@@ -127,19 +127,19 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <NavLink route="https://github.com/Mayra234/layout-meet">
+            <a route="https://github.com/Mayra234/layout-meet">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
                   icon={faArrowUpRightFromSquare}
                 />
               </Icon>
-            </NavLink>
-            <NavLink route=" https://mayra234.github.io/layout-meet/">
+            </a>
+            <a route=" https://mayra234.github.io/layout-meet/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
-            </NavLink>
+            </a>
           </div>
         </Card>
 
@@ -157,19 +157,19 @@ export const Projects = () => {
             </p>
           </div>
           <div className="icon-nav">
-            <NavLink route="https://github.com/Mayra234/rock-paper-scissors-react">
+            <a route="https://github.com/Mayra234/rock-paper-scissors-react">
               <Icon>
                 <FontAwesomeIcon
                   className="icon-link"
                   icon={faArrowUpRightFromSquare}
                 />
               </Icon>
-            </NavLink>
-            <NavLink route=" https://mayra234.github.io/rock-paper-scissors-react/">
+            </a>
+            <a route=" https://mayra234.github.io/rock-paper-scissors-react/">
               <Icon>
                 <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
               </Icon>
-            </NavLink>
+            </a>
           </div>
         </Card>
       </div>
