@@ -43,14 +43,14 @@ export const Resume = () => {
               <H1 className="title-study">Curso Básico de Programación</H1>
               <H3>Platzi (2022)</H3>
             </div>
-            <p>---</p>
+            <p></p>
           </Card>
           <Card palette="primary">
             <div className="title-card">
               <H1 className="title-study">Técnico en Sistemas</H1>
               <H3>Sena (2017-2018)</H3>
             </div>
-            <p>---</p>
+            <p></p>
           </Card>
           <Card palette="primary">
             <div className="title-card">
@@ -59,18 +59,17 @@ export const Resume = () => {
               </H1>
               <H3>Sena (2019-2021)</H3>
             </div>
-            <p>---</p>
+            <p></p>
           </Card>
           <Card palette="primary">
             <div className="title-card">
-              <H1 className="title-study">Portafolio personal</H1>
-              <H3>Universidad de DVI (1997 - 2001)</H3>
+              <H1 className="title-study">
+                Curso especial en fortalecimiento de la lógica y el pensamiento
+                matemático en el campo de la tecnología
+              </H1>
+              <H3>Sena (2019)</H3>
             </div>
-            <p>
-              La educación debe ser muy interactivo. Ut tincidunt est ac dolor
-              aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
-              lobortis mauris hendrerit ante.
-            </p>
+            <p></p>
           </Card>
         </div>
       )}
