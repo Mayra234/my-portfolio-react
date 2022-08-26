@@ -1,5 +1,5 @@
 .content-banner {
-  background-image: url('https://mourithemes.com/marlon/marlon/images/home/a1.jpg');
+  background-image: url('../../../assets/image/fondo.jpeg');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -16,6 +16,9 @@
 
 .welcome-text {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-h3 {

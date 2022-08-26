@@ -9,7 +9,7 @@ export const SkillBar = ({ percentage = '', mainText = '' }) => {
       <div className="container-skill-bar">
         <div
           className="skill-bar-child"
-          style={{ width: `${percentage}%` }}
+          style={{ '--width': `${percentage}%` }}
         ></div>
       </div>
     </div>

@@ -1,22 +1,29 @@
 import React from 'react';
 import { H2 } from '../../../components/H2';
 import { H3 } from '../../../components/H3';
+import me from '../../../assets/image/me.jpeg';
 import './index.css';
 
 export const AboutMe = () => {
   return (
     <div id="about-me" className="container-about">
       <div className="image-about-me">
-        <img className="image-about" src="" />
+        <img className="image-about" src={me} />
       </div>
       <div className="text-about">
-        <H2 className="text-about-h2">Mayra Diavanera</H2>
-        <H3 className="text-about-h3">Web Developer</H3>
+        <H2 className="text-about-h2">Alejandra Diavanera</H2>
+        <H3 className="text-about-h3">
+          Desarrolladora JR Frontend Javascript + ReactJS
+        </H3>
         <p className="p">
-          Web Developer with 5+ years of experience in designing and developing
-          user interfaces, testing, debugging and tracing staff within
-          e-commerce technologies. Proven ability in optimizing web
-          functionalities that improve data retrieval and workflow efficiencies.
+          Desarrolladora JR Frontend con 2 años de experiencia creando
+          aplicaciones web utilizando HTML, CSS, Javascript y ReactJS. He
+          trabajado en proyectos de carácter académico, construyendo componentes
+          atómicos en Javascript y React mediante Storybook y aplicando patrones
+          de diseño para mantener un código legible y evitar malas prácticas de
+          desarrollo. Interesada en seguir aprendiendo metodologías organizadas
+          de desarrollo de software para la producción de tecnologías
+          escalables.
         </p>
       </div>
     </div>

@@ -10,16 +10,20 @@
 
 .image-about-me {
   height: 100%;
-  max-height: 479px;
+  max-height: px;
   width: 100%;
-  max-width: 404px;
+  max-width: 204px;
+}
+
+.about-me {
+  width: 300px;
+  height: 300px;
 }
 
 .text-about {
   margin-top: 20px;
   height: 100%;
   max-width: 400px;
-  margin-top: 90px;
   padding: 0 15px;
   display: flex;
   flex-direction: column;

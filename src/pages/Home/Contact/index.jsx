@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './index.css';
 import React from 'react';
+import { faEnvelope, faMessage } from '@fortawesome/free-regular-svg-icons';
 
 export const Contact = () => {
   return (
@@ -13,16 +14,31 @@ export const Contact = () => {
       <H2 className="title">Contacto</H2>
       <Separator />
       <p className="introduction">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-        odio cumque harum laborum dignissimos iste!
+        Puedes contactarme a través de los sigientes medios
       </p>
-      <div>
+      <div className="content-card-contact">
         <Card palette="primary" className="contact-me">
           <Icon>
             <FontAwesomeIcon icon={faPhone} />
           </Icon>
-          <H2>Teléfono</H2>
+          <H2 className="title-contact">Teléfono</H2>
           <p>3126098992</p>
+        </Card>
+        <Card palette="primary" className="contact-me">
+          <Icon>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </Icon>
+          <H2 className="title-contact">Email</H2>
+          <p>alejandradiavanera@gmail.com</p>
+        </Card>
+        <Card palette="primary" className="contact-me">
+          <Icon>
+            <FontAwesomeIcon icon={faMessage} />
+          </Icon>
+          <H2 className="title-contact">LinkedIn</H2>
+          <a id="linkedin" href="www.linkedin.com/in/alejandra-diavanera">
+            Alejandra Diavanera
+          </a>
         </Card>
       </div>
     </div>
