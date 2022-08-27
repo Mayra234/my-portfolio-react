@@ -27,6 +27,11 @@
   text-align: center;
 }
 
+.contact-me > a {
+  color: #212121;
+  text-transform: none;
+}
+
 .title-contact {
   font-size: 18px;
 }

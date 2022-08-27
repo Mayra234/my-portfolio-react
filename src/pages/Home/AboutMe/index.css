@@ -6,11 +6,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  column-gap: 17px;
 }
 
 .image-about-me {
   height: 100%;
-  max-height: px;
   width: 100%;
   max-width: 204px;
 }
@@ -23,7 +23,7 @@
 .text-about {
   margin-top: 20px;
   height: 100%;
-  max-width: 400px;
+  max-width: 570px;
   padding: 0 15px;
   display: flex;
   flex-direction: column;
@@ -64,17 +64,10 @@
   }
 
   .image-about-me {
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     height: 100%;
     width: 100%;
-  }
-
-  .image-about {
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
   }
 
   .text-about {

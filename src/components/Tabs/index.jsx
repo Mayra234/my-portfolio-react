@@ -19,7 +19,13 @@ export const Tabs = ({ className = '', tabs = [], onChange = () => {} }) => {
     <div className="content-tabs">
       <ul className={'tabs ' + className}>
         {tabs.map((tab, index) => (
-          <Tab key={index} {...tab} onClick={() => onClickTab(index)} />
+          <Tab
+            {...tab}
+            currentIndex={currentTab}
+            index={index}
+            key={index}
+            onClick={() => onClickTab(index)}
+          />
         ))}
       </ul>
     </div>

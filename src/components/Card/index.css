@@ -3,3 +3,13 @@
   padding: 10px;
   text-align: center;
 }
+
+.primary-card-palette {
+  background: white;
+  border-color: #f7f5f0;
+}
+
+.secondary-card-palette {
+  background: transparent;
+  border-color: transparent;
+}

@@ -1,14 +1,15 @@
 .tab-container {
+  padding-bottom: 34px;
+  margin-top: 34px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
   width: 90%;
 }
 
 .tab-study {
   display: grid;
-  gap: 10px;
+  gap: 34px;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;

@@ -1,4 +1,4 @@
-.tab-nav-item.active {
+.tab-nav-item > a.active {
   color: #e91e63;
   box-shadow: 0 20px 40px rgba(130, 126, 126, 0.08);
   background: transparent;

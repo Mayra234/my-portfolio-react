@@ -6,32 +6,44 @@ export const Card = ({
   children = '',
   className = '',
   palette = 'primary',
+  shadow = false,
+  border = false,
   ...props
 }) => {
   const [style, setStyle] = useState(props.style);
-
-  const changePalette = () => {
-    if (palette === 'primary') {
-      setStyle((prevStyle) => ({
-        ...prevStyle,
-        boxShadow: '0 7px 10px rgb(0 0 0 / 20%)',
-      }));
-    } else if (palette === 'secondary') {
-      setStyle((prevStyle) => ({
-        ...prevStyle,
-        padding: '30px 10px',
-        margin: '0 15px 15px',
-        overflow: 'hidden',
-      }));
-    }
-  };
+  const [paletteClass, setPaletteClass] = useState();
 
   useEffect(() => {
-    changePalette();
+    setStyle((prevStyle) => ({
+      ...prevStyle,
+      boxShadow: shadow ? '0 7px 10px rgb(0 0 0 / 20%)' : undefined,
+    }));
+  }, [shadow]);
+
+  useEffect(() => {
+    setStyle((prevStyle) => ({
+      ...prevStyle,
+      borderWidth: border ? '1px' : undefined,
+      borderStyle: border ? 'solid' : undefined,
+    }));
+  }, [border]);
+
+  useEffect(() => {
+    switch (palette) {
+      case 'primary':
+        setPaletteClass('primary-card-palette');
+        break;
+      case 'secondary':
+        setPaletteClass('secondary-card-palette');
+        break;
+      default:
+        setPaletteClass('primary-card-palette');
+        break;
+    }
   }, [palette]);
 
   return (
-    <div palette={palette} style={style} className={'card ' + className}>
+    <div style={style} className={`card ${className} ${paletteClass}`}>
       {children}
     </div>
   );

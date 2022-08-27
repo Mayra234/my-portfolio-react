@@ -6,193 +6,57 @@ import { Separator } from '../../../components/Separator';
 import { Card } from '../../../components/Card';
 import { Icon } from '../../../components/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Button } from '../../../components/Button';
+import { PROJECTS } from '../../../constants/projects';
 import {
-  faFeather,
-  faShirt,
   faArrowUpRightFromSquare,
   faCodeBranch,
-  faCalculator,
-  faPeopleGroup,
-  faHandSpock,
 } from '@fortawesome/free-solid-svg-icons';
-import { Button } from '../../../components/Button';
-import { Link } from 'react-router-dom';
 
 export const Projects = () => {
   return (
     <div id="project" className="container-projects">
       <H2 className="title">Proyectos</H2>
       <Separator />
-      <p className="introduction">
-        Los siguientes proyectos fueron creados como modo académico
-      </p>
       <div className="content-cards-project">
-        <Card palette="secondary" className="project">
-          <Icon>
-            <FontAwesomeIcon icon={faShirt} />
-          </Icon>
-          <H3 className="title-project">admin-crud-clothes</H3>
-          <p className="date">Mayo 2022 - presente</p>
-          <div className="text-card-project">
-            <p>
-              Proyecto de práctica de una plataforma administrativa para
-              gestionar un almacén de ropa utilizando vanilla HTML, CSS y
-              Javascript.
-            </p>
-          </div>
-          <div className="icon-nav">
-            <a href="https://mayra234.github.io/admin-crud-clothes/">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon
-                    className="icon-link"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                </Icon>
-              </Button>
-            </a>
-            <a href="https://github.com/Mayra234/admin-crud-clothes">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
-                </Icon>
-              </Button>
-            </a>
-          </div>
-        </Card>
-
-        <Card palette="secondary" className="project">
-          <Icon>
-            <FontAwesomeIcon icon={faFeather} />
-          </Icon>
-          <H3 className="title-project">fosico</H3>
-          <p className="date">Abril 2022 - Mayo 2022</p>
-          <div className="text-card-project">
-            <p>
-              Proyecto de maquetación web utilizando HTML, CSS, grid y flexbox
-              para clonar una landing page con temática de tienda de artes.
-            </p>
-          </div>
-          <div className="icon-nav">
-            <a href="https://mayra234.github.io/fosico-html-css/">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon
-                    className="icon-link"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                </Icon>
-              </Button>
-            </a>
-            <a href="https://github.com/Mayra234/fosico-html-css">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
-                </Icon>
-              </Button>
-            </a>
-          </div>
-        </Card>
-
-        <Card palette="secondary" className="project">
-          <Icon>
-            <FontAwesomeIcon icon={faCalculator} />
-          </Icon>
-          <H3 className="title-project">calculadora html</H3>
-          <p className="date">Enero 2022 - Abril 2022</p>
-          <div className="text-card-project">
-            <p>
-              Proyecto de maquetación web utilizando HTML, CSS, grid y flexbox
-              para clonar una calculadora.
-            </p>
-          </div>
-          <div className="icon-nav">
-            <a href="https://mayra234.github.io/vanilla-js-calculator/">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon
-                    className="icon-link"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                </Icon>
-              </Button>
-            </a>
-            <a href="https://github.com/Mayra234/vanilla-js-calculator">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
-                </Icon>
-              </Button>
-            </a>
-          </div>
-        </Card>
-
-        <Card palette="secondary" className="project">
-          <Icon>
-            <FontAwesomeIcon icon={faPeopleGroup} />
-          </Icon>
-          <H3 className="title-project">Clon del layout de Google meets</H3>
-          <p className="date">Enero 2022 - Abril 2022</p>
-          <div className="text-card-project">
-            <p>
-              Proyecto de maquetación web utilizando HTML, CSS, grid y flexbox
-              para clonar una landing page con temática de google meet.
-            </p>
-          </div>
-          <div className="icon-nav">
-            <a href="https://mayra234.github.io/layout-meet/">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon
-                    className="icon-link"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                </Icon>
-              </Button>
-            </a>
-            <a href="https://github.com/Mayra234/layout-meet">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
-                </Icon>
-              </Button>
-            </a>
-          </div>
-        </Card>
-
-        <Card palette="secondary" className="project">
-          <Icon>
-            <FontAwesomeIcon icon={faHandSpock} />
-          </Icon>
-          <H3 className="title-project">Piedra, papel o tijera</H3>
-          <p className="date">Agosto 2022 - Agosto 2022</p>
-          <div className="text-card-project">
-            <p>
-              Proyecto de maquetación web utilizando HTML, CSS, grid, flexbox y
-              Javascript para realizar una landing page con temática del juego
-              piedra, papel o tijera.
-            </p>
-          </div>
-          <div className="icon-nav">
-            <a href="https://mayra234.github.io/rock-paper-scissors-react/">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon
-                    className="icon-link"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                </Icon>
-              </Button>
-            </a>
-            <a href="https://github.com/Mayra234/rock-paper-scissors-react">
-              <Button className="icons-project">
-                <Icon>
-                  <FontAwesomeIcon className="icon-link" icon={faCodeBranch} />
-                </Icon>
-              </Button>
-            </a>
-          </div>
-        </Card>
+        {PROJECTS.map((project, i) => (
+          <Card key={i} palette="secondary" className="project">
+            <Icon>
+              <FontAwesomeIcon style={{ fontSize: 32 }} icon={project.icon} />
+            </Icon>
+            <H3 className="title-project">{project.title}</H3>
+            <p className="date">{project.date}</p>
+            <div className="text-card-project">
+              <p>{project.text}</p>
+            </div>
+            <div className="icon-nav">
+              {project.siteUrl && (
+                <a href={project.siteUrl} target="_blank">
+                  <Button className="icons-project">
+                    <Icon>
+                      <FontAwesomeIcon
+                        className="icon-link"
+                        icon={faArrowUpRightFromSquare}
+                      />
+                    </Icon>
+                  </Button>
+                </a>
+              )}
+              {project.githubUrl && (
+                <a href={project.githubUrl} target="_blank">
+                  <Button className="icons-project">
+                    <Icon>
+                      <FontAwesomeIcon
+                        className="icon-link"
+                        icon={faCodeBranch}
+                      />
+                    </Icon>
+                  </Button>
+                </a>
+              )}
+            </div>
+          </Card>
+        ))}
       </div>
     </div>
   );
