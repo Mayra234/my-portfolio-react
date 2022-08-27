@@ -102,10 +102,23 @@
   align-items: center;
 }
 
+.icon-nav > a {
+  margin: 5px;
+}
+
 .icon-link {
   width: 30px;
   height: 30px;
   color: #212121;
+}
+
+.icons-project:hover {
+  background: #e91e63;
+  padding: 10px 20px;
+}
+
+.icons-project:hover .icon-link {
+  color: #f3f4f3;
 }
 
 @media (max-width: 768px) {
