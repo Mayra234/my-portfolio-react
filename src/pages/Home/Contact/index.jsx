@@ -31,7 +31,10 @@ export const Contact = () => {
           <H2 className="title-contact">Email</H2>
           <p>alejandradiavanera@gmail.com</p>
         </Card>
-        <a id="linkedin" href="www.linkedin.com/in/alejandra-diavanera">
+        <a
+          id="linkedin"
+          href="https://www.linkedin.com/in/alejandra-diavanera/"
+        >
           <Card palette="primary" className="contact-me">
             <Icon>
               <FontAwesomeIcon icon={faMessage} />
