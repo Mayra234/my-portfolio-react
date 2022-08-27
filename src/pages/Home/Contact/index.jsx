@@ -31,18 +31,19 @@ export const Contact = () => {
           <H2 className="title-contact">Email</H2>
           <p>alejandradiavanera@gmail.com</p>
         </Card>
-        <a
-          id="linkedin"
-          href="https://www.linkedin.com/in/alejandra-diavanera/"
-        >
-          <Card palette="primary" className="contact-me">
+
+        <Card palette="primary" className="contact-me">
+          <a
+            id="linkedin"
+            href="https://www.linkedin.com/in/alejandra-diavanera/"
+          >
             <Icon>
               <FontAwesomeIcon icon={faMessage} />
             </Icon>
             <H2 className="title-contact">LinkedIn</H2>
             Alejandra Diavanera
-          </Card>
-        </a>
+          </a>
+        </Card>
       </div>
     </div>
   );
