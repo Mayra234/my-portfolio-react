@@ -31,15 +31,15 @@ export const Contact = () => {
           <H2 className="title-contact">Email</H2>
           <p>alejandradiavanera@gmail.com</p>
         </Card>
-        <Card palette="primary" className="contact-me">
-          <Icon>
-            <FontAwesomeIcon icon={faMessage} />
-          </Icon>
-          <H2 className="title-contact">LinkedIn</H2>
-          <a id="linkedin" href="www.linkedin.com/in/alejandra-diavanera">
+        <a id="linkedin" href="www.linkedin.com/in/alejandra-diavanera">
+          <Card palette="primary" className="contact-me">
+            <Icon>
+              <FontAwesomeIcon icon={faMessage} />
+            </Icon>
+            <H2 className="title-contact">LinkedIn</H2>
             Alejandra Diavanera
-          </a>
-        </Card>
+          </Card>
+        </a>
       </div>
     </div>
   );
