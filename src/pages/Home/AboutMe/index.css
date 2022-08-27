@@ -64,10 +64,17 @@
   }
 
   .image-about-me {
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     height: 100%;
     width: 100%;
+  }
+
+  .image-about {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
   }
 
   .text-about {
