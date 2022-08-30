@@ -26,11 +26,41 @@ export const MainLayout = ({ children = '' }) => {
             <ListNavLinks
               className={`list-links ${menu ? 'active' : ''} `}
               links={[
-                { children: 'inicio', route: '#banner' },
-                { children: 'Sobre mi', route: '#about-me' },
-                { children: 'Hoja de vida', route: '#resume' },
-                { children: 'Proyectos', route: '#project' },
-                { children: 'Contacto', route: '#contact' },
+                {
+                  children: 'inicio',
+                  route: '#banner',
+                  onClick: () => {
+                    setMenu(!menu);
+                  },
+                },
+                {
+                  children: 'Sobre mi',
+                  route: '#about-me',
+                  onClick: () => {
+                    setMenu(!menu);
+                  },
+                },
+                {
+                  children: 'Hoja de vida',
+                  route: '#resume',
+                  onClick: () => {
+                    setMenu(!menu);
+                  },
+                },
+                {
+                  children: 'Proyectos',
+                  route: '#project',
+                  onClick: () => {
+                    setMenu(!menu);
+                  },
+                },
+                {
+                  children: 'Contacto',
+                  route: '#contact',
+                  onClick: () => {
+                    setMenu(!menu);
+                  },
+                },
               ]}
             />
           </Navbar>
