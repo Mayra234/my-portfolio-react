@@ -6,6 +6,10 @@ export const SKILLS = [
   { name: 'Git', score: 55 },
   { name: 'Webpack', score: 55 },
   { name: 'Storybook', score: 60 },
+  { name: 'NextJS', score: 50 },
+  { name: 'Redux', score: 60 },
+  { name: 'Bootstrap', score: 50 },
+  { name: 'Material UI', score: 70 },
 ];
 
 export const STUDIES = [
