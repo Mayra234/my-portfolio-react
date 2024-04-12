@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { H2 } from '../../../components/H2';
 import { H3 } from '../../../components/H3';
-import me from '../../../assets/image/me.jpeg';
+import me from '../../../assets/image/me.jpg';
 import './index.css';
 
 export const AboutMe = () => {
+  useEffect(() => {
+    const elemento = document.getElementsByClassName('list-links');
+    document.addEventListener('focus', () => {
+      elemento.classList.add('activeLink');
+    });
+    document.addEventListener('blur', () => {
+      elemento.classList.remove('activeLink');
+    });
+  }, []);
   return (
     <div id="about-me" className="container-about">
       <div className="image-about-me">

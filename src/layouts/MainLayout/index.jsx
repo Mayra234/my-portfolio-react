@@ -4,11 +4,12 @@ import { Header } from '../../components/Header';
 import { Navbar } from '../../components/Navbar';
 import { Avatar } from '../../components/Avatar';
 import { Footer } from '../../components/Footer';
-import { ListNavLinks } from '../../components/ListNavLinks';
 import { Button } from '../../components/Button';
 import { Icon } from '../../components/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from '../../components/NavLink';
+import me from '../../assets/image/me.jpg';
 
 export const MainLayout = ({ children = '' }) => {
   const [menu, setMenu] = useState(false);
@@ -17,52 +18,63 @@ export const MainLayout = ({ children = '' }) => {
     setMenu(!menu);
   };
 
+  const links = [
+    {
+      children: 'Inicio',
+      route: '#banner',
+      onClick: () => {
+        setMenu(!menu);
+      },
+    },
+    {
+      children: 'Sobre mi',
+      route: '#about-me',
+      onClick: () => {
+        setMenu(!menu);
+      },
+    },
+    {
+      children: 'Hoja de vida',
+      route: '#resume',
+      onClick: () => {
+        setMenu(!menu);
+      },
+    },
+    {
+      children: 'Proyectos',
+      route: '#project',
+      onClick: () => {
+        setMenu(!menu);
+      },
+    },
+    {
+      children: 'Contacto',
+      route: '#contact',
+      onClick: () => {
+        setMenu(!menu);
+      },
+    },
+  ];
+
   return (
     <>
       <div className="main-layout">
         <Header>
           <Navbar className="menu-nav">
-            <Avatar mainText="Mayra" />
-            <ListNavLinks
-              className={`list-links ${menu ? 'active' : ''} `}
-              links={[
-                {
-                  children: 'inicio',
-                  route: '#banner',
-                  onClick: () => {
-                    setMenu(!menu);
-                  },
-                },
-                {
-                  children: 'Sobre mi',
-                  route: '#about-me',
-                  onClick: () => {
-                    setMenu(!menu);
-                  },
-                },
-                {
-                  children: 'Hoja de vida',
-                  route: '#resume',
-                  onClick: () => {
-                    setMenu(!menu);
-                  },
-                },
-                {
-                  children: 'Proyectos',
-                  route: '#project',
-                  onClick: () => {
-                    setMenu(!menu);
-                  },
-                },
-                {
-                  children: 'Contacto',
-                  route: '#contact',
-                  onClick: () => {
-                    setMenu(!menu);
-                  },
-                },
-              ]}
-            />
+            <Avatar mainText="Mayra" image={me} />
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              {links.map((link, i) => (
+                <NavLink key={i} route={link.route}>
+                  {link.children}
+                </NavLink>
+              ))}
+            </div>
           </Navbar>
           <Button
             className="bar-menu"
@@ -76,7 +88,7 @@ export const MainLayout = ({ children = '' }) => {
           </Button>
         </Header>
         <div>{children}</div>
-        <Footer>© 2022</Footer>
+        <Footer>© 2024</Footer>
       </div>
     </>
   );

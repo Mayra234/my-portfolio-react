@@ -8,7 +8,12 @@ export const Avatar = ({ image = '', mainText = '', className = '' }) => {
         <span className="image-avatar">
           {image ? (
             <img
-              style={{ objectFit: 'cover', borderRadius: '50%' }}
+              style={{
+                objectFit: 'cover',
+                borderRadius: '50%',
+                width: '100%',
+                height: '100%',
+              }}
               src={image}
             />
           ) : (

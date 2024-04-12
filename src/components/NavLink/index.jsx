@@ -1,17 +1,18 @@
 import './index.css';
 import React from 'react';
-import { Anchor } from 'antd';
-const { Link } = Anchor;
 
 export const NavLink = ({
   id = '',
   children = '',
   route = '',
   onClick = '',
+  className = '',
 }) => {
   return (
-    <Anchor onClick={onClick} className="nav">
-      <Link id={id} className="link-nav" href={route} title={children} />
-    </Anchor>
+    <div onClick={onClick} className="nav">
+      <a id={id} className={'link-nav ' + className} href={route}>
+        {children}
+      </a>
+    </div>
   );
 };

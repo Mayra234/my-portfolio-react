@@ -10,6 +10,14 @@
   font-size: 13px;
 }
 
+.link-nav:hover {
+  color: #e91e63;
+}
+
+.link-nav.active {
+  color: #e91e63;
+}
+
 @media (min-width: 802px) {
   .nav {
     margin: 0 10px;

@@ -16,12 +16,6 @@
   margin: 0 10px;
 }
 
-.scroll .link-nav.active {
-  color: #e91e63;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e91e63;
-}
-
 @media (max-width: 768px) {
   .bar-menu {
     position: absolute;

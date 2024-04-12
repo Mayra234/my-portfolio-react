@@ -1,15 +1,16 @@
 export const SKILLS = [
-  { name: 'HTML', score: 80 },
-  { name: 'CSS', score: 75 },
+  { name: 'HTML', score: 90 },
+  { name: 'CSS', score: 90 },
   { name: 'Javascript', score: 75 },
-  { name: 'ReactJS', score: 60 },
-  { name: 'Git', score: 55 },
+  { name: 'Typescript', score: 55 },
+  { name: 'ReactJS', score: 70 },
+  { name: 'Git', score: 65 },
   { name: 'Webpack', score: 55 },
   { name: 'Storybook', score: 60 },
   { name: 'NextJS', score: 50 },
   { name: 'Redux', score: 60 },
   { name: 'Bootstrap', score: 50 },
-  { name: 'Material UI', score: 70 },
+  { name: 'Material UI', score: 80 },
 ];
 
 export const STUDIES = [
